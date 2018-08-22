@@ -1,0 +1,209 @@
+@font-face {
+  font-family: "DancingScript-Regular";
+  src: url("DancingScript-Regular.ttf");
+}
+body{
+  background-color: #02010a;
+  color: white;
+  font-family: "DancingScript-Regular", arial;
+  animation: slidein 5s;
+}
+
+header {
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  height: 10vh;
+  padding: 20px;
+}
+h1 {
+  text-shadow: 2px 2px #02010a;
+  font-size: 5vw;
+  width: 65%;
+  box-sizing: border-box;
+  display: inline;
+}
+header p {
+  width: 35%;
+  box-sizing: border-box;
+  display: inline;
+  float: right;
+}
+a {
+  color: white;
+  font-family: "DancingScript-Regular", arial;
+  font-size: 3vw;
+  text-decoration: underline;
+  padding-left: 20px;
+}
+a[href^=index] {
+  text-decoration: none;
+  padding-left: 0px;
+}
+
+#imagen_central {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+  background-color: #82c3a6;
+}
+
+#girona {
+  width: 100%;
+  box-shadow: 2px 2px #02010a;
+  margin: auto;
+}
+#peru {
+  width: 90%;
+  box-shadow: 2px 2px #02010a;
+  margin: auto;
+}
+#peru:hover {
+  transform: rotate(10deg);
+}
+#bolivia {
+  width: 90%;
+  box-shadow: 2px 2px #02010a;
+  margin: auto;
+}
+#bolivia:hover {
+  transform: translate(20px,-5px);
+}
+.a {
+  color: black;
+  text-align: center;
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #C6d5c5;
+  margin: 0;
+  padding: 0;
+}
+.logo-pie {
+  height: 3vh;
+  padding: 10px 7px 0px 0px;
+}
+.pie {
+  width: 25%;
+  color: black;
+  padding: 0px;
+}
+.pie h2 {
+  text-align: center;
+}
+.pie p {
+  text-align: left;
+  padding-left: 30px;
+  border: 0;
+  font-weight: bold;
+}
+
+@media screen and (min-width:900px) {
+
+  #contenido {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 280%;
+  }
+  a {
+    font-size: 150%;
+  }
+
+  #imagen_secundaria {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    background-color: #d5c75f;
+    box-sizing: border-box;
+    border: 1px;
+    padding: 10px;
+  }
+  .columna {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+}
+@media screen and (max-width:899px) {
+  #contenido {
+    width: 100%;
+    margin: 0 auto;
+  }
+  header h1 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  header p {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #imagen_central {
+    display:flex;
+    flex-direction:column;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+  }
+
+  #imagen_secundaria {
+    display:flex;
+    flex-direction:column;
+    width: 100%;
+    background-color: #d5c75f;
+    box-sizing: border-box;
+    border: 1px;
+    padding: 10px;
+  }
+  .columna {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    width: 100%;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    width: 100%;
+  }
+  .pie {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .pie h2 {
+    text-align: center;
+    font-size: 3.5vw;
+  }
+  .pie p {
+    text-align: justify;
+    font-size: 3vw;
+  }
+  .logo-pie {
+    height: 2vh;
+  }
+
+}
+@-webkit-keyframes slidein {
+  0% {
+    margin-top: 150%;
+  }
+  60% {
+    margin-top: -5%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
